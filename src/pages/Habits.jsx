@@ -28,7 +28,7 @@ export default function Habits({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/habits',
+          'https://genesis-server-production-3676.up.railway.app/habits',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ export default function Habits({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `https://genesis-precursor-server-production.up.railway.app/habits/${id}`,
+        `https://genesis-server-production-3676.up.railway.app/habits/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@ export default function Habits({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'https://genesis-precursor-server-production.up.railway.app/habits',
+        'https://genesis-server-production-3676.up.railway.app/habits',
         newHabit,
         {
           headers: {
@@ -116,7 +116,7 @@ export default function Habits({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `https://genesis-precursor-server-production.up.railway.app/habits/${currentHabit.id}`,
+        `https://genesis-server-production-3676.up.railway.app/habits/${currentHabit.id}`,
         currentHabit,
         {
           headers: {

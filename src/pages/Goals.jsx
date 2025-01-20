@@ -24,7 +24,7 @@ export default function Goals({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/goals',
+          'https://genesis-server-production-3676.up.railway.app/goals',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ export default function Goals({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/todos',
+          'https://genesis-server-production-3676.up.railway.app/todos',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ export default function Goals({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `https://genesis-precursor-server-production.up.railway.app/goals/${id}`,
+        `https://genesis-server-production-3676.up.railway.app/goals/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -90,7 +90,7 @@ export default function Goals({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'https://genesis-precursor-server-production.up.railway.app/goals',
+        'https://genesis-server-production-3676.up.railway.app/goals',
         { name: newGoalName },
         {
           headers: {
@@ -111,7 +111,7 @@ export default function Goals({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `https://genesis-precursor-server-production.up.railway.app/goals/${currentGoal.id}`,
+        `https://genesis-server-production-3676.up.railway.app/goals/${currentGoal.id}`,
         { name: currentGoal.name },
         {
           headers: {
@@ -137,7 +137,7 @@ export default function Goals({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       await axios.get(
-        `https://genesis-precursor-server-production.up.railway.app/goals/generateTodos/${id}`,
+        `https://genesis-server-production-3676.up.railway.app/goals/generateTodos/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

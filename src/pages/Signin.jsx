@@ -31,7 +31,7 @@ export default function Signin({ isAuthenticated, setIsAuthenticated }) {
     try {
       setIsLoading(true)
       const response = await axios.post(
-        'https://genesis-precursor-server-production.up.railway.app/users/signin',
+        'https://genesis-server-production-3676.up.railway.app/users/signin',
         user
       )
 

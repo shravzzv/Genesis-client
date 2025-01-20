@@ -19,7 +19,7 @@ export default function Settings({ isAuthenticated, setIsAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/users/user',
+          'https://genesis-server-production-3676.up.railway.app/users/user',
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -29,7 +29,7 @@ export default function Todos({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/todos',
+          'https://genesis-server-production-3676.up.railway.app/todos',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ export default function Todos({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/goals',
+          'https://genesis-server-production-3676.up.railway.app/goals',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ export default function Todos({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `https://genesis-precursor-server-production.up.railway.app/todos/${id}`,
+        `https://genesis-server-production-3676.up.railway.app/todos/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -96,7 +96,7 @@ export default function Todos({ isAuthenticated }) {
       setIsLoading(true)
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'https://genesis-precursor-server-production.up.railway.app/todos',
+        'https://genesis-server-production-3676.up.railway.app/todos',
         newTodo,
         {
           headers: {
@@ -125,7 +125,7 @@ export default function Todos({ isAuthenticated }) {
       setIsLoading(true)
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `https://genesis-precursor-server-production.up.railway.app/todos/${currentTodo.id}`,
+        `https://genesis-server-production-3676.up.railway.app/todos/${currentTodo.id}`,
         currentTodo,
         {
           headers: {

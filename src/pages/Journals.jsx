@@ -23,7 +23,7 @@ export default function Journals({ isAuthenticated }) {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          'https://genesis-precursor-server-production.up.railway.app/journals',
+          'https://genesis-server-production-3676.up.railway.app/journals',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ export default function Journals({ isAuthenticated }) {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `https://genesis-precursor-server-production.up.railway.app/journals/${id}`,
+        `https://genesis-server-production-3676.up.railway.app/journals/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ export default function Journals({ isAuthenticated }) {
       setIsLoading(true)
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'https://genesis-precursor-server-production.up.railway.app/journals',
+        'https://genesis-server-production-3676.up.railway.app/journals',
         newJournal,
         {
           headers: {
@@ -92,7 +92,7 @@ export default function Journals({ isAuthenticated }) {
       setIsLoading(true)
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `https://genesis-precursor-server-production.up.railway.app/journals/${currentJournal.id}`,
+        `https://genesis-server-production-3676.up.railway.app/journals/${currentJournal.id}`,
         currentJournal,
         {
           headers: {
