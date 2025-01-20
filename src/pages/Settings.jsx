@@ -63,7 +63,7 @@ export default function Settings({ isAuthenticated, setIsAuthenticated }) {
           <p>
             &copy; 2025 Sai Shravan Vadla. All rights reserved.
             <a
-              href='https://github.com/shravzzv/Genesis-precursor-client/issues'
+              href='https://github.com/shravzzv/Genesis-client/issues'
               target='_blank'
               rel='noopener noreferrer'
             >
